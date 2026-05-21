@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Symptom from "../Entities/SymptomService";
 import { Card, CardContent, CardHeader, CardTitle } from "../Components/ui/card";
 import { Button } from "../Components/ui/button";
-import { Plus, Activity, TrendingUp, BarChart } from "lucide-react";
+import { Plus, BarChart } from "lucide-react";
 import SymptomForm from "../Components/symptoms/SymptomForm";
 import SymptomChart from "../Components/symptoms/SymptomChart";
 import SymptomLog from "../Components/symptoms/SymptomLog";

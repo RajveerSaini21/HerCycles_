@@ -1,7 +1,7 @@
 import React, { useMemo } from 'react';
 import { ResponsiveContainer, BarChart, XAxis, YAxis, Tooltip, Bar, CartesianGrid } from 'recharts';
 import { format, parseISO, startOfWeek, endOfWeek, isWithinInterval } from 'date-fns';
-import { groupBy, map } from 'lodash';
+import { groupBy } from 'lodash';
 
 export default function SymptomChart({ symptoms }) {
   const chartData = useMemo(() => {

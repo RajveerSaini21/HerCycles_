@@ -6,7 +6,7 @@ import { Badge } from '../Components/ui/badge';
 import { Button } from '../Components/ui/button';
 import { Textarea } from '../Components/ui/textarea';
 import { Heart, MessageCircle, Send, ArrowLeft } from 'lucide-react';
-import { formatDistanceToNow, format } from 'date-fns';
+import { formatDistanceToNow } from 'date-fns';
 import { Skeleton } from '../Components/ui/skeleton';
 import { Link } from 'react-router-dom';
 import { createPageUrl } from '../utils';

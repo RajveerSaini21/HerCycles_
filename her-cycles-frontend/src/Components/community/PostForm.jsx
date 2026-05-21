@@ -6,7 +6,6 @@ import { Label } from '../ui/label';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '../ui/select';
 import { Textarea } from '../ui/textarea';
 import { X, Send } from 'lucide-react';
-import User from '../../Entities/User.json';
 const CATEGORIES = ["general_health", "period_questions", "birth_control", "pregnancy", "menopause", "mental_health", "nutrition", "exercise", "relationships", "work_life"];
 const ANONYMOUS_NAMES = ["StarlightSeeker", "Moonflower", "OceanWhisper", "Sunbeam", "WillowGrace", "RiverSong", "EchoSoul", "ForestHeart", "CosmicDreamer"];
 
