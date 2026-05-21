@@ -1,0 +1,48 @@
+{
+    "name": "QAItem",
+    "type": "object",
+    "properties": {
+      "question": {
+        "type": "string",
+        "description": "The question"
+      },
+      "answer": {
+        "type": "string",
+        "description": "The detailed answer"
+      },
+      "category": {
+        "type": "string",
+        "enum": [
+          "menstrual_cycle",
+          "ovulation",
+          "birth_control",
+          "symptoms",
+          "fertility",
+          "hormones",
+          "lifestyle",
+          "myths_facts"
+        ],
+        "description": "Question category"
+      },
+      "helpful_count": {
+        "type": "number",
+        "default": 0,
+        "description": "Number of users who found this helpful"
+      },
+      "difficulty": {
+        "type": "string",
+        "enum": [
+          "beginner",
+          "intermediate",
+          "advanced"
+        ],
+        "default": "beginner",
+        "description": "Complexity level of the topic"
+      }
+    },
+    "required": [
+      "question",
+      "answer",
+      "category"
+    ]
+  }

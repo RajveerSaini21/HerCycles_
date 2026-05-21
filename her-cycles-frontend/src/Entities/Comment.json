@@ -1,0 +1,28 @@
+{
+    "name": "Comment",
+    "type": "object",
+    "properties": {
+      "post_id": {
+        "type": "string",
+        "description": "ID of the parent post"
+      },
+      "content": {
+        "type": "string",
+        "description": "Comment content"
+      },
+      "anonymous_name": {
+        "type": "string",
+        "description": "Anonymous display name of commenter"
+      },
+      "likes_count": {
+        "type": "number",
+        "default": 0,
+        "description": "Number of likes on comment"
+      }
+    },
+    "required": [
+      "post_id",
+      "content",
+      "anonymous_name"
+    ]
+  }

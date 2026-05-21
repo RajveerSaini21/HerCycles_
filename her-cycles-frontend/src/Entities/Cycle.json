@@ -1,0 +1,47 @@
+{
+    "name": "Cycle",
+    "type": "object",
+    "properties": {
+      "start_date": {
+        "type": "string",
+        "format": "date",
+        "description": "First day of menstrual cycle"
+      },
+      "end_date": {
+        "type": "string",
+        "format": "date",
+        "description": "Last day of period"
+      },
+      "cycle_length": {
+        "type": "number",
+        "description": "Total cycle length in days"
+      },
+      "period_length": {
+        "type": "number",
+        "description": "Period duration in days"
+      },
+      "flow_intensity": {
+        "type": "string",
+        "enum": [
+          "light",
+          "moderate",
+          "heavy"
+        ],
+        "default": "moderate",
+        "description": "Menstrual flow intensity"
+      },
+      "notes": {
+        "type": "string",
+        "description": "Additional notes about the cycle"
+      },
+      "predicted": {
+        "type": "boolean",
+        "default": false,
+        "description": "Whether this is a predicted cycle"
+      }
+    },
+    "required": [
+      "start_date"
+    ]
+  }
+  

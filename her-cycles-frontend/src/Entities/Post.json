@@ -1,0 +1,57 @@
+{
+    "name": "Post",
+    "type": "object",
+    "properties": {
+      "title": {
+        "type": "string",
+        "description": "Post title"
+      },
+      "content": {
+        "type": "string",
+        "description": "Post content"
+      },
+      "category": {
+        "type": "string",
+        "enum": [
+          "general_health",
+          "period_questions",
+          "birth_control",
+          "pregnancy",
+          "menopause",
+          "mental_health",
+          "nutrition",
+          "exercise",
+          "relationships",
+          "work_life"
+        ],
+        "description": "Post category"
+      },
+      "anonymous_name": {
+        "type": "string",
+        "description": "Anonymous display name chosen by user"
+      },
+      "tags": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        },
+        "description": "Post tags"
+      },
+      "likes_count": {
+        "type": "number",
+        "default": 0,
+        "description": "Number of likes"
+      },
+      "comments_count": {
+        "type": "number",
+        "default": 0,
+        "description": "Number of comments"
+      }
+    },
+    "required": [
+      "title",
+      "content",
+      "category",
+      "anonymous_name"
+    ]
+  }

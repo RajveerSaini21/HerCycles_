@@ -1,0 +1,10 @@
+{
+    "name": "User",
+    "properties": {
+      "id": "string",
+      "username": "string",
+      "email": "string"
+    },
+    "required": ["id", "username"]
+  }
+  

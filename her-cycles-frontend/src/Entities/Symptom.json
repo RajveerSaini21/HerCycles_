@@ -1,0 +1,57 @@
+{
+    "name": "Symptom",
+    "type": "object",
+    "properties": {
+      "date": {
+        "type": "string",
+        "format": "date",
+        "description": "Date when symptom was experienced"
+      },
+      "symptom_type": {
+        "type": "string",
+        "enum": [
+          "cramps",
+          "bloating",
+          "mood_swings",
+          "headache",
+          "fatigue",
+          "breast_tenderness",
+          "acne",
+          "back_pain",
+          "nausea",
+          "food_cravings",
+          "irritability",
+          "anxiety",
+          "depression",
+          "hot_flashes",
+          "sleep_issues"
+        ],
+        "description": "Type of symptom experienced"
+      },
+      "severity": {
+        "type": "number",
+        "minimum": 1,
+        "maximum": 10,
+        "description": "Severity rating from 1-10"
+      },
+      "notes": {
+        "type": "string",
+        "description": "Additional notes about the symptom"
+      },
+      "time_of_day": {
+        "type": "string",
+        "enum": [
+          "morning",
+          "afternoon",
+          "evening",
+          "night"
+        ],
+        "description": "Time when symptom was most noticeable"
+      }
+    },
+    "required": [
+      "date",
+      "symptom_type",
+      "severity"
+    ]
+  }

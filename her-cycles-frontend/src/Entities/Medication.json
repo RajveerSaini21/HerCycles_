@@ -1,0 +1,57 @@
+{
+    "name": "Medication",
+    "type": "object",
+    "properties": {
+      "name": {
+        "type": "string",
+        "description": "Name of medication"
+      },
+      "type": {
+        "type": "string",
+        "enum": [
+          "birth_control_pill",
+          "pain_relief",
+          "supplement",
+          "hormone_therapy",
+          "other"
+        ],
+        "description": "Type of medication"
+      },
+      "dosage": {
+        "type": "string",
+        "description": "Dosage information"
+      },
+      "reminder_times": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "format": "time"
+        },
+        "description": "Daily reminder times"
+      },
+      "start_date": {
+        "type": "string",
+        "format": "date",
+        "description": "When medication started"
+      },
+      "end_date": {
+        "type": "string",
+        "format": "date",
+        "description": "When medication ends (optional)"
+      },
+      "active": {
+        "type": "boolean",
+        "default": true,
+        "description": "Whether medication is currently active"
+      },
+      "notes": {
+        "type": "string",
+        "description": "Additional notes"
+      }
+    },
+    "required": [
+      "name",
+      "type",
+      "dosage"
+    ]
+  }
