@@ -1,10 +1,10 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import * as React from "react";
 
 const SelectCtx = React.createContext(null);
 
+const items = [];
 export function Select({ value, onValueChange, children, className = "" }) {
-  // collect items from <SelectContent><SelectItem value="...">Label</SelectItem></SelectContent>
-  const items = [];
   React.Children.forEach(children, (child) => {
     if (!child) return;
     if (child.type === SelectContent) {

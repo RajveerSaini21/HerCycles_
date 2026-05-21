@@ -1,5 +1,5 @@
 import React from 'react';
-import { Label } from "../ui/label";
+
 
 const DURATION_OPTIONS = [
   { value: "A few hours", label: "A few hours", description: "Symptoms started today." },

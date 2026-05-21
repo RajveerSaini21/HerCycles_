@@ -1,6 +1,5 @@
 import React from 'react';
-import { Button } from "../ui/button";
-import { Label } from "../ui/label";
+
 
 const SEVERITY_LEVELS = [
   { value: "Mild", label: "Mild", description: "Barely noticeable, doesn't interfere with daily activities." },
